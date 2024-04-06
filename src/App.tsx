@@ -1,12 +1,14 @@
 import "./App.css";
 import {
   TypographyH1,
-  TypographyH3,
   TypographyMuted,
   TypographyP,
 } from "./components/typography";
 import { Button } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
+
+import digital from "./assets/digital.png";
+import tryk from "./assets/tryk.png";
 
 function App() {
   return (
@@ -44,11 +46,11 @@ function App() {
         </section>
       </div>
 
-      <div className="w-full p-4 text-center sm:p-8">
+      <div className="container p-4 text-center sm:p-8">
         <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
           <div className="sm:w-1/2 flex flex-col justify-center items-center">
             <img
-              src="https://source.unsplash.com/random?digital"
+              src={digital}
               className="h-64 object-cover rounded-xl"
               alt="Layout Image"
             />
@@ -57,7 +59,7 @@ function App() {
           </div>
           <div className="sm:w-1/2 flex flex-col justify-center items-center">
             <img
-              src="https://source.unsplash.com/random?tryk"
+              src={tryk}
               className="h-64 object-cover rounded-xl"
               alt="Layout Image"
             />

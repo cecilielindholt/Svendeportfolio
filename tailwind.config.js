@@ -9,6 +9,9 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      'metapro': ['MetaPro']
+    },
     container: {
       center: true,
       padding: "2rem",

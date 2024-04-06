@@ -73,4 +73,41 @@
   body {
     @apply bg-background text-foreground;
   }
+  @font-face {
+    font-family: 'MetaPro';
+    font-weight: 900;
+    src: url(/assets/fonts/MetaPro-Black.otf) format("otf");
+  }
+  @font-face {
+    font-family: 'MetaPro';
+    font-weight: 700;
+    src: url(/assets/fonts/MetaPro-Bold.otf) format("otf");
+  }
+  @font-face {
+    font-family: 'MetaPro';
+    font-weight: 500;
+    src: url(/assets/fonts/MetaPro-Medi.otf) format("otf");
+  }
+  @font-face {
+    font-family: 'MetaPro';
+    font-weight: 400;
+    src: url(/assets/fonts/MetaPro-Norm.otf) format("otf");
+  }
+  @font-face {
+    font-family: 'MetaPro';
+    font-weight: 400;
+    font-stretch: condensed;
+    src: url(/assets/fonts/MetaPro-CondNorm.otf) format("otf");
+  }
+  @font-face {
+    font-family: 'MetaPro';
+    font-weight: 300;
+    src: url(/assets/fonts/MetaPro-Light.otf) format("otf");
+  }
+  @font-face {
+    font-family: 'MetaPro';
+    font-weight: 300;
+    font-style: italic;
+    src: url(/assets/fonts/MetaPro-LightIta.otf) format("otf");
+  }
 }
