@@ -26,7 +26,7 @@ function App() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                   viverra euismod odio, gravida pellentesque urna varius vitae.
                 </p>
-                <Button asChild><a target="_blank" href="./Svendeportfolio.pdf">Hent PDF</a></Button>
+                <Button asChild><a target="_blank" href="./Svendeportfolio_samlet.pdf">Hent PDF</a></Button>
                 {/* <a
                   href="#"
                   className="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600"
