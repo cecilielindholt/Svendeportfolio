@@ -26,7 +26,7 @@ function App() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                   viverra euismod odio, gravida pellentesque urna varius vitae.
                 </p>
-                <Button>Hent PDF</Button>
+                <Button asChild><a target="_blank" href="./Svendeportfolio.pdf">Hent PDF</a></Button>
                 {/* <a
                   href="#"
                   className="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600"
@@ -55,7 +55,7 @@ function App() {
               alt="Layout Image"
             />
             <TypographyP>Digital Portfolio</TypographyP>
-            <Button>Hent PDF</Button>
+            <Button asChild><a target="_blank" href="./SvendeportfolioDigital.pdf">Hent PDF</a></Button>
           </div>
           <div className="sm:w-1/2 flex flex-col justify-center items-center">
             <img
@@ -64,7 +64,7 @@ function App() {
               alt="Layout Image"
             />
             <TypographyP>Tryk Portfolio</TypographyP>
-            <Button>Hent PDF</Button>
+            <Button asChild><a target="_blank" href="./SvendeportfolioTryk.pdf">Hent PDF</a></Button>
           </div>
         </div>
       </div>
