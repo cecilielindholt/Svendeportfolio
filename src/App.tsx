@@ -35,7 +35,7 @@ function App() {
       <div className="flex">
         <section className="bg-cover bg-center py-20 w-full bg-white">
           <div className="container mx-auto">
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <div className="md:w-1/2 text-center">
                 <div className="inline-block text-left">
                   <div className="text-5xl font-black">Mediegrafiker</div>
