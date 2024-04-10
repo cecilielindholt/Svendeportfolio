@@ -10,7 +10,7 @@ module.exports = {
   prefix: "",
   theme: {
     fontFamily: {
-      'metapro': ['MetaPro']
+      metapro: ['MetaPro', "sans-serif"]
     },
     container: {
       center: true,
@@ -20,7 +20,12 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        dots: "url('/prikker.svg')"
+      },
       colors: {
+        lightgreen: "hsl(var(--light-green))",
+        darkgreen: "hsl(var(--dark-green))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

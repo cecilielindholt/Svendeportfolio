@@ -1,70 +1,142 @@
 import "./App.css";
-import {
-  TypographyH1,
-  TypographyMuted,
-  TypographyP,
-} from "./components/typography";
 import { Button } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
 
-import digital from "./assets/digital.png";
-import tryk from "./assets/tryk.png";
+import samlet from "./assets/samlet.png";
+import digitalt from "./assets/digitalt.png";
+import trykt from "./assets/trykt.png";
+import { Badge } from "./components/ui/badge";
 
 function App() {
   return (
     <>
-      <div className="bg-gray-50 flex">
-        <section className="bg-cover bg-center py-32 w-full bg-black/15">
-          <div className="container mx-auto text-left text-white">
+      <div className="flex">
+        <section className="bg-cover bg-center w-full bg-lightgreen bg-dots text-center -mb-2 sm:-mb-4">
+          <div className="relative flex py-5 sm:py-10 items-center">
+            <div className="flex-grow border-t-4 border-white"></div>
+            <Badge
+              variant={"outline"}
+              className="uppercase bg-white border-none rounded-full text-darkgreen font-bold"
+            >
+              Cecilie Morgenstjerne Lindholt
+            </Badge>
+            <div className="flex-grow border-t-4 border-white"></div>
+          </div>
+          <div className="pt-32">
+            <div className="uppercase font-medium">
+              Mediegrafiker Svendeprøve
+            </div>
+            <div className="uppercase font-black text-7xl sm:text-9xl text-white">
+              Portfolio
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className="flex">
+        <section className="bg-cover bg-center py-20 w-full bg-white">
+          <div className="container mx-auto">
             <div className="flex items-center">
               <div className="md:w-1/2 text-center">
-                <TypographyMuted>
-                  Cecilie Morgenstjerne Lindholt
-                </TypographyMuted>
-                <TypographyH1>Svendeportfolio</TypographyH1>
-                <p className="text-xl mb-12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  viverra euismod odio, gravida pellentesque urna varius vitae.
-                </p>
-                <Button asChild><a target="_blank" href="./Svendeportfolio_samlet.pdf">Hent PDF</a></Button>
-                {/* <a
-                  href="#"
-                  className="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600"
-                >
-                  Demo
-                </a> */}
+                <div className="inline-block text-left">
+                  <div className="text-5xl font-black">Mediegrafiker</div>
+                  <div className="text-xl font-medium text-darkgreen uppercase">
+                    Udlært på forlaget frydenlund
+                  </div>
+                  <div className="font-light pt-10">
+                    Svendeportfolio med udgangspunkt i to produkter lavet på
+                    lærepladsen.
+                    <br />
+                    <br />
+                    En beskrivelse opdelt i fire kernefagligheder:
+                    <ul className="list-disc list-inside">
+                      <li>Grafisk design</li>
+                      <li>Grafik og billedebehandling</li>
+                      <li>Typografi</li>
+                      <li>Grafisk produktionsforståelse</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="py-10">
+                  <Button
+                    variant={"outline"}
+                    className="md:hidden uppercase text-darkgreen border-darkgreen hover:bg-darkgreen hover:text-white"
+                    asChild
+                  >
+                    <a target="_blank" href="./samlet_Portfolio.pdf">
+                      Hent Samlet Portfolio
+                    </a>
+                  </Button>
+                </div>
               </div>
-              <div className="hidden md:block md:w-1/2 pl-16">
+
+              <div className="hidden md:block md:w-1/2 pl-16 text-center">
                 <img
-                  src="https://source.unsplash.com/random?ux"
-                  className="h-64 w-full object-cover rounded-xl"
+                  src={samlet}
+                  className="w-full max-w-md object-cover rounded-xl"
                   alt="Layout Image"
                 />
+                <Button
+                  variant={"outline"}
+                  className="uppercase text-darkgreen border-darkgreen hover:bg-darkgreen hover:text-white"
+                  asChild
+                >
+                  <a target="_blank" href="./samlet_Portfolio.pdf">
+                    Hent Samlet Portfolio
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
         </section>
       </div>
 
-      <div className="container p-4 text-center sm:p-8">
-        <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+      <div className="p-4 text-center sm:p-8 bg-lightgreen">
+        <div className="container items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
           <div className="sm:w-1/2 flex flex-col justify-center items-center">
             <img
-              src={digital}
+              src={digitalt}
               className="h-64 object-cover rounded-xl"
               alt="Layout Image"
             />
-            <TypographyP>Digital Portfolio</TypographyP>
-            <Button asChild><a target="_blank" href="./SvendeportfolioDigital.pdf">Hent PDF</a></Button>
+            <div className="font-black text-lg text-darkgreen pb-3">
+              Digitalt Produkt
+            </div>
+            <div className="font-medium text-sm uppercase">E-bog</div>
+            <div className="font-light text-xs">Sorøkatastrofen</div>
+            <div className="font-light text-xs">Jakob Oliing</div>
+            <br />
+            <Button
+              asChild
+              variant={"outline"}
+              className="uppercase text-darkgreen border-darkgreen hover:bg-darkgreen hover:text-white"
+            >
+              <a target="_blank" href="./digitalt_Portfolio.pdf">
+                Hent beskrivelse
+              </a>
+            </Button>
           </div>
           <div className="sm:w-1/2 flex flex-col justify-center items-center">
             <img
-              src={tryk}
+              src={trykt}
               className="h-64 object-cover rounded-xl"
               alt="Layout Image"
             />
-            <TypographyP>Tryk Portfolio</TypographyP>
-            <Button asChild><a target="_blank" href="./SvendeportfolioTryk.pdf">Hent PDF</a></Button>
+            <div className="font-black text-lg text-darkgreen pb-3">
+              Trykt Produkt
+            </div>
+            <div className="font-medium text-sm uppercase">Hardback</div>
+            <div className="font-light text-xs">På togt til Konstantinopel</div>
+            <div className="font-light text-xs">Stefan Torfasons og Dan H. Andersens</div>
+            <br />
+            <Button
+              asChild
+              variant={"outline"}
+              className="uppercase text-darkgreen border-darkgreen hover:bg-darkgreen hover:text-white"
+            >
+              <a target="_blank" href="./trykt_Portfolio.pdf">
+                Hent beskrivelse
+              </a>
+            </Button>
           </div>
         </div>
       </div>
@@ -72,9 +144,9 @@ function App() {
       <Separator />
 
       <div className="flex flex-col sm:flex-row text-center sm:justify-evenly p-4">
-        <TypographyMuted>Cecilie Morgenstjerne Lindholt</TypographyMuted>
-        <TypographyMuted>Svendeportfolio</TypographyMuted>
-        <TypographyMuted>Forår 2024</TypographyMuted>
+        <div className="font-medium text-xs text-darkgreen">Cecilie Morgenstjerne Lindholt</div>
+        <div className="font-medium text-xs text-darkgreen">Svendeportfolio</div>
+        <div className="font-medium text-xs text-darkgreen">Forår 2024</div>
       </div>
     </>
   );
