@@ -62,7 +62,7 @@ function App() {
                     className="md:hidden uppercase text-darkgreen border-darkgreen hover:bg-darkgreen hover:text-white"
                     asChild
                   >
-                    <a target="_blank" href="./samlet_Portfolio.pdf">
+                    <a target="_blank" href="./Samlet_Portfolio_web.pdf">
                       Hent Samlet Portfolio
                     </a>
                   </Button>
@@ -80,7 +80,7 @@ function App() {
                   className="uppercase text-darkgreen border-darkgreen hover:bg-darkgreen hover:text-white"
                   asChild
                 >
-                  <a target="_blank" href="./samlet_Portfolio.pdf">
+                  <a target="_blank" href="./Samlet_Portfolio_web.pdf">
                     Hent Samlet Portfolio
                   </a>
                 </Button>
@@ -110,7 +110,7 @@ function App() {
               variant={"outline"}
               className="uppercase text-darkgreen border-darkgreen hover:bg-darkgreen hover:text-white"
             >
-              <a target="_blank" href="./digitalt_Portfolio.pdf">
+              <a target="_blank" href="./Digitalt_Portfolio_web.pdf">
                 Hent beskrivelse
               </a>
             </Button>
@@ -133,7 +133,7 @@ function App() {
               variant={"outline"}
               className="uppercase text-darkgreen border-darkgreen hover:bg-darkgreen hover:text-white"
             >
-              <a target="_blank" href="./trykt_Portfolio.pdf">
+              <a target="_blank" href="./Trykt_Portfolio_web.pdf">
                 Hent beskrivelse
               </a>
             </Button>
